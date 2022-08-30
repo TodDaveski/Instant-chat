@@ -1,0 +1,125 @@
+2022/08/19 19:59:06 error while fetching user from database:  timed out while checking out a connection from connection pool: context deadline exceeded; maxPoolSize: 100, connections in use by cursors: 0, connections in use by transactions: 0, connections in use by other operations: 0
+2022/08/19 19:59:29 error while storing user at the database:  connection pool for localhost:27017 was cleared because another operation failed with: connection(localhost:27017[-3]) incomplete read of full message: read tcp [::1]:52850->[::1]:27017: i/o timeout
+2022/08/19 20:01:48 error while fetching user from database:  timed out while checking out a connection from connection pool: context deadline exceeded; maxPoolSize: 100, connections in use by cursors: 0, connections in use by transactions: 0, connections in use by other operations: 0
+2022/08/19 20:01:54 error while storing user at the database:  timed out while checking out a connection from connection pool: context deadline exceeded; maxPoolSize: 100, connections in use by cursors: 0, connections in use by transactions: 0, connections in use by other operations: 0
+2022/08/19 20:06:03 error while fetching user from database:  timed out while checking out a connection from connection pool: context deadline exceeded; maxPoolSize: 100, connections in use by cursors: 0, connections in use by transactions: 0, connections in use by other operations: 0
+2022/08/19 20:06:03 error while storing user at the database:  timed out while checking out a connection from connection pool: context deadline exceeded; maxPoolSize: 100, connections in use by cursors: 0, connections in use by transactions: 0, connections in use by other operations: 0
+2022/08/19 20:06:07 error while fetching user from database:  mongo: no documents in result
+2022/08/19 20:07:42 http: superfluous response.WriteHeader call from main.Login (handler.go:282)
+2022/08/19 20:08:07 error while fetching user from database:  mongo: no documents in result
+2022/08/19 20:08:18 error while fetching user from database:  mongo: no documents in result
+2022/08/19 20:37:47 websocket: close 1001 (going away)
+2022/08/19 20:37:53 http: superfluous response.WriteHeader call from main.Login (handler.go:278)
+2022/08/19 20:45:26 http: superfluous response.WriteHeader call from main.Login (handler.go:278)
+2022/08/19 21:03:56 http: superfluous response.WriteHeader call from main.Login (handler.go:278)
+2022/08/20 05:36:50 http: panic serving 127.0.0.1:54967: interface conversion: interface {} is nil, not string
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1850 +0x118
+panic({0x104bde560, 0x14000292930})
+	/Users/akmal/sdk/go1.19/src/runtime/panic.go:890 +0x26c
+main.ShowFriends({0x104c654a0, 0x140002e4000}, 0x140002cc300)
+	/Users/akmal/GolandProjects/main/handler.go:138 +0xc20
+net/http.HandlerFunc.ServeHTTP(0x104c5f3f8, {0x104c654a0, 0x140002e4000}, 0x140002cc300)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2109 +0x44
+github.com/gorilla/mux.(*Router).ServeHTTP(0x140001a80c0, {0x104c654a0, 0x140002e4000}, 0x140002cc300)
+	/Users/akmal/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0x258
+net/http.serverHandler.ServeHTTP({0x140001760f0}, {0x104c654a0, 0x140002e4000}, 0x140002cc100)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2947 +0x41c
+net/http.(*conn).serve(0x140002ca140, {0x104c65998, 0x1400029c0c0})
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1991 +0x14e0
+created by net/http.(*Server).Serve
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:3102 +0x7e4
+2022/08/20 05:37:42 http: panic serving 127.0.0.1:55023: interface conversion: interface {} is nil, not string
+goroutine 69 [running]:
+net/http.(*conn).serve.func1()
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1850 +0x118
+panic({0x104bde560, 0x14000292a80})
+	/Users/akmal/sdk/go1.19/src/runtime/panic.go:890 +0x26c
+main.ShowFriends({0x104c654a0, 0x140001a60e0}, 0x140001aa300)
+	/Users/akmal/GolandProjects/main/handler.go:138 +0xc20
+net/http.HandlerFunc.ServeHTTP(0x104c5f3f8, {0x104c654a0, 0x140001a60e0}, 0x140001aa300)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2109 +0x44
+github.com/gorilla/mux.(*Router).ServeHTTP(0x140001a80c0, {0x104c654a0, 0x140001a60e0}, 0x140001aa300)
+	/Users/akmal/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0x258
+net/http.serverHandler.ServeHTTP({0x140001760f0}, {0x104c654a0, 0x140001a60e0}, 0x140001aa100)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2947 +0x41c
+net/http.(*conn).serve(0x140001ca000, {0x104c65998, 0x14000032ec0})
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1991 +0x14e0
+created by net/http.(*Server).Serve
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:3102 +0x7e4
+2022/08/20 05:38:44 http: panic serving 127.0.0.1:55416: interface conversion: interface {} is primitive.ObjectID, not string
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1850 +0x118
+panic({0x100a5a560, 0x14000226720})
+	/Users/akmal/sdk/go1.19/src/runtime/panic.go:890 +0x26c
+main.ShowFriends({0x100ae14a0, 0x14000260000}, 0x14000248200)
+	/Users/akmal/GolandProjects/main/handler.go:138 +0xc20
+net/http.HandlerFunc.ServeHTTP(0x100adb3f8, {0x100ae14a0, 0x14000260000}, 0x14000248200)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2109 +0x44
+github.com/gorilla/mux.(*Router).ServeHTTP(0x140001aa0c0, {0x100ae14a0, 0x14000260000}, 0x14000248200)
+	/Users/akmal/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0x258
+net/http.serverHandler.ServeHTTP({0x140001760f0}, {0x100ae14a0, 0x14000260000}, 0x14000248000)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2947 +0x41c
+net/http.(*conn).serve(0x14000216140, {0x100ae1998, 0x14000212200})
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1991 +0x14e0
+created by net/http.(*Server).Serve
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:3102 +0x7e4
+2022/08/20 05:39:16 http: panic serving 127.0.0.1:55473: interface conversion: interface {} is primitive.ObjectID, not string
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1850 +0x118
+panic({0x100a5a560, 0x140000c2840})
+	/Users/akmal/sdk/go1.19/src/runtime/panic.go:890 +0x26c
+main.ShowFriends({0x100ae14a0, 0x140002c0000}, 0x140002aa200)
+	/Users/akmal/GolandProjects/main/handler.go:138 +0xc20
+net/http.HandlerFunc.ServeHTTP(0x100adb3f8, {0x100ae14a0, 0x140002c0000}, 0x140002aa200)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2109 +0x44
+github.com/gorilla/mux.(*Router).ServeHTTP(0x140001aa0c0, {0x100ae14a0, 0x140002c0000}, 0x140002aa200)
+	/Users/akmal/go/pkg/mod/github.com/gorilla/mux@v1.8.0/mux.go:210 +0x258
+net/http.serverHandler.ServeHTTP({0x140001760f0}, {0x100ae14a0, 0x140002c0000}, 0x140002aa000)
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:2947 +0x41c
+net/http.(*conn).serve(0x1400029e000, {0x100ae1998, 0x140002a4000})
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:1991 +0x14e0
+created by net/http.(*Server).Serve
+	/Users/akmal/sdk/go1.19/src/net/http/server.go:3102 +0x7e4
+2022/08/20 05:43:47 http: superfluous response.WriteHeader call from main.Login (handler.go:288)
+2022/08/21 14:20:50 http: superfluous response.WriteHeader call from main.Login (handler.go:293)
+2022/08/21 14:31:42 websocket: close 1001 (going away)
+2022/08/21 14:31:42 websocket: close 1001 (going away)
+2022/08/21 14:40:11 error on reading request body:  json: cannot unmarshal object into Go struct field Message.content of type string
+2022/08/21 14:48:42 websocket: close 1006 (abnormal closure): unexpected EOF
+2022/08/21 14:48:42 websocket: close 1006 (abnormal closure): unexpected EOF
+2022/08/21 14:48:43 websocket: close 1006 (abnormal closure): unexpected EOF
+2022/08/21 14:48:43 websocket: close 1006 (abnormal closure): unexpected EOF
+2022/08/21 14:48:43 websocket: close 1006 (abnormal closure): unexpected EOF
+2022/08/21 16:23:09 http: superfluous response.WriteHeader call from main.Login (handler.go:293)
+2022/08/21 16:26:39 error on reading request body:  json: cannot unmarshal object into Go struct field Message.content of type string
+2022/08/21 16:32:21 error on reading request body:  json: cannot unmarshal object into Go struct field Message.content of type string
+2022/08/21 16:33:09 error on reading request body:  json: cannot unmarshal object into Go struct field Message.content of type string
+2022/08/21 16:35:40 error on reading request body:  json: cannot unmarshal object into Go struct field Message.content of type string
+2022/08/21 16:36:07 websocket: close 1001 (going away)
+2022/08/21 16:36:07 websocket: close 1001 (going away)
+2022/08/21 16:36:07 websocket: close 1001 (going away)
+2022/08/21 16:36:07 websocket: close 1001 (going away)
+2022/08/21 16:36:07 websocket: close 1001 (going away)
+2022/08/21 16:36:14 http: superfluous response.WriteHeader call from main.Login (handler.go:296)
+2022/08/21 16:45:35 http: superfluous response.WriteHeader call from main.Login (handler.go:297)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:24 websocket: close 1001 (going away)
+2022/08/21 16:51:29 http: superfluous response.WriteHeader call from main.Login (handler.go:297)
+2022/08/21 16:56:16 websocket: close 1001 (going away)
+2022/08/21 16:56:16 websocket: close 1001 (going away)
+2022/08/21 16:56:16 websocket: close 1001 (going away)
+2022/08/21 16:58:25 websocket: close 1001 (going away)
+2022/08/30 17:26:56 http: superfluous response.WriteHeader call from main.Login (handler.go:280)
